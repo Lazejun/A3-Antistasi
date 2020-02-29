@@ -809,7 +809,7 @@
       <French />
       <Russian />
     </Key>
-    <Key ID="STR_antistasi_mission_info_chernaBwinter_mapname_text">
+    <Key ID="STR_antistasi_mission_info_chernawinterB_mapname_text">
       <Original>Antistasi - Chilled revolt (BLUFOR)</Original>
       <English>Antistasi - Chilled revolt (BLUFOR)</English>
       <French />
@@ -819,7 +819,7 @@
       <Original>Antistasi Chernarus (BLUFOR)</Original>
       <English>Antistasi Chernarus (BLUFOR)</English>
     </Key>
-    <Key ID="STR_antistasi_mission_info_chernaBwinter_mapname_short_text">
+    <Key ID="STR_antistasi_mission_info_chernawinterB_mapname_short_text">
       <Original>Antistasi Chernarus Winter (BLUFOR)</Original>
       <English>Antistasi Chernarus Winter (BLUFOR)</English>
     </Key>
