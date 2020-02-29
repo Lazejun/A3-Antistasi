@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1211;
+		nextID=1268;
 	};
 	class Camera
 	{
-		pos[]={8238.2334,35.790939,5963.0024};
-		dir[]={0.64389855,-0.63102603,0.43267682};
-		up[]={0.52376223,0.77576268,0.35194966};
-		aside[]={0.55774325,-2.1507731e-008,-0.83001864};
+		pos[]={8243.3389,68.38118,5935.6333};
+		dir[]={0.28381348,-0.80980849,0.51349992};
+		up[]={0.3917354,0.58669192,0.7087608};
+		aside[]={0.87522477,-1.0744407e-007,-0.48374027};
 	};
 };
 binarizationWanted=0;
@@ -207,17 +207,26 @@ class AddonsMetaData
 	};
 };
 randomSeed=13388897;
+class ScenarioData
+{
+	author="Lazejun";
+};
 class Mission
 {
 	assetType="Free";
 	class Intel
 	{
-		briefingName=$STR_antistasi_mission_info_maldenB_mapname_text;
+		briefingName="Antistasi - Liberation of Malden (BLUFOR)";
 		resistanceWest=0;
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
 		year=2020;
 		month=7;
 		hour=10;
 		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 	class Entities
 	{
@@ -14093,7 +14102,7 @@ class Mission
 					colorName="ColorGreen";
 					a=20.476999;
 					b=6;
-					angle=220.92676;
+					angle=220.92674;
 					id=8461;
 					atlOffset=0.00021362305;
 				};

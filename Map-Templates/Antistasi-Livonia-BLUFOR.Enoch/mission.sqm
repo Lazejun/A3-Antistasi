@@ -215,7 +215,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName=$STR_antistasi_mission_info_livonia_mapname_text;
+		briefingName=$STR_antistasi_mission_info_livoniaB_mapname_text;
 		resistanceWest=0;
 		year=2020;
 		month=6;
