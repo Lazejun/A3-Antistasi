@@ -741,6 +741,88 @@
         <Original>Fought on the camel's back</Original>
         <English>Fought on the camel's back</English>
       </Key>
+      <Key ID="STR_antistasi_mission_info_tanoaB_mapname_text">
+        <Original>Antistasi - Warlords of the Pacific (BLUFOR)</Original>
+        <English>Antistasi - Warlords of the Pacific (BLUFOR)</English>
+        <French>Antistasi - Les Seigneurs de Guerre du Pacifique (BLUFOR)</French>
+        <Russian>Antistasi - Хозяева Тихого Океана (BLUFOR)</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_tanoaB_mapname_short_text">
+        <Original>Antistasi Tanoa (BLUFOR)</Original>
+        <English>Antistasi Tanoa (BLUFOR)</English>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_maldenB_mapname_text">
+        <Original>Antistasi - Liberation of Malden (BLUFOR)</Original>
+        <English>Antistasi - Liberation of Malden (BLUFOR)</English>
+        <French>Antistasi - La Libération de Malden (BLUFOR)</French>
+        <Russian>Antistasi - Освобождение Мальдена (BLUFOR)</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_maldenB_mapname_short_text">
+        <Original>Antistasi Malden (BLUFOR) </Original>
+        <English>Antistasi Malden (BLUFOR)</English>
+        <French>Antistasi Malden (BLUFOR)</French>
+        <Russian>Antistasi Мальдена (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_livoniaB_mapname_text">
+      <Original>Antistasi - The Baltic Revolution (BLUFOR)</Original>
+      <English>Antistasi - The Baltic Revolution (BLUFOR)</English>
+      <French>Antistasi - La Révolution Baltique (BLUFOR)</French>
+      <Russian>Antistasi - Балтийская Революция (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_livoniaB_mapname_short_text">
+      <Original>Antistasi Livonia (BLUFOR)</Original>
+      <English>Antistasi Livonia (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_kunduzB_mapname_text">
+      <Original>Antistasi - Battle of Kunduz (BLUFOR)</Original>
+      <English>Antistasi - Battle of Kunduz (BLUFOR)</English>
+      <French>Antistasi - La Bataille de Kanduz (BLUFOR)</French>
+      <Russian>Antistasi - Битва за Кундуз (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_kunduzB_mapname_short_text">
+      <Original>Antistasi Kunduz (BLUFOR)</Original>
+      <English>Antistasi Kunduz (BLUFOR)</English>
+      <French>Antistasi Kanduz (BLUFOR)</French>
+      <Russian>Antistasi Кундуз (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_tembelanB_mapname_text">
+      <Original>Antistasi - Liberation of Tembelan (BLUFOR)</Original>
+      <English>Antistasi - Liberation of Tembelan (BLUFOR)</English>
+      <French>Antistasi - La Libération de Tembelan (BLUFOR)</French>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_tembelanB_mapname_short_text">
+      <Original>Antistasi Tembelan (BLUFOR)</Original>
+      <English>Antistasi Tembelan (BLUFOR)</English>
+      <French>Antistasi Tembelan (BLUFOR)</French>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_anizayB_mapname_text">
+      <Original>Antistasi - Liberation of Anizay (BLUFOR)</Original>
+      <English>Antistasi - Liberation of Anizay (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_anizayB_blurb_text">
+      <Original>Fought on the camel's back (BLUFOR)</Original>
+      <English>Fought on the camel's back (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernaB_mapname_text">
+      <Original>Antistasi - Kolkhoz in revolt (BLUFOR)</Original>
+      <English>Antistasi - Kolkhoz in revolt (BLUFOR)</English>
+      <French />
+      <Russian />
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernaBwinter_mapname_text">
+      <Original>Antistasi - Chilled revolt (BLUFOR)</Original>
+      <English>Antistasi - Chilled revolt (BLUFOR)</English>
+      <French />
+      <Russian />
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernaB_mapname_short_text">
+      <Original>Antistasi Chernarus (BLUFOR)</Original>
+      <English>Antistasi Chernarus (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernaBwinter_mapname_short_text">
+      <Original>Antistasi Chernarus Winter (BLUFOR)</Original>
+      <English>Antistasi Chernarus Winter (BLUFOR)</English>
+    </Key>
     </Container>
     <Container name="journal_entries">
       <Key ID="STR_antistasi_journal_entry_header_tutorial_1">
