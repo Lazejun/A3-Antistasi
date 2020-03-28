@@ -502,10 +502,11 @@ if !(hasIFA) then {
 	};
 	//Occupant Templates
 	switch (true) do {
-		case (!activeUSAF): {call compile preProcessFileLineNumbers "Templates\Vanilla_Occ_NATO_Altis.sqf"};
 		case (has3CB): {call compile preProcessFileLineNumbers "Templates\BAF_Occ_BAF_Arid.sqf"};
+		case (hasSFP): {call compile preProcessFileLineNumbers "Templates\SFP_OCC_SWE_WDL.sqf"};
 		case (teamPlayer != independent): {call compile preProcessFileLineNumbers "Templates\RHS_Occ_CDF_Arid.sqf"};
 		case (activeUSAF): {call compile preProcessFileLineNumbers "Templates\RHS_Occ_USAF_Arid.sqf"};
+		case (!activeUSAF): {call compile preProcessFileLineNumbers "Templates\Vanilla_Occ_NATO_Altis.sqf"};
 	};
 	//Invader Templates
 	switch (true) do {
@@ -611,7 +612,7 @@ DECLARE_SERVER_VAR(vehFIA, _vehFIA);
 
 // sanity check the lists to catch some serious problems early
 private _badVehs = [];
-{  
+{
     if !(isClass (configFile >> "CfgVehicles" >> _x)) then {
         _badVehs pushBackUnique _x;
     };

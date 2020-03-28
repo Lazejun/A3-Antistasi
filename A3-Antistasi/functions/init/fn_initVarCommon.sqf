@@ -85,6 +85,7 @@ activeGREF = false;
 hasFFAA = false;
 hasIFA = false;
 has3CB = false;
+hasSFP = false;
 //Systems Mods
 hasACE = false;
 hasACEHearing = false;
@@ -114,7 +115,10 @@ if (activeAFRF && activeUSAF && isClass (configFile >> "CfgFactionClasses" >> "r
 if (activeAFRF && activeUSAF && activeGREF && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Weapons")) then {has3CB = true; diag_log format ["%1: [Antistasi] | INFO | initVar | 3CB Detected.",servertime];};
 //FFAA Detection
 if (isClass (configfile >> "CfgPatches" >> "ffaa_armas")) then {hasFFAA = true; diag_log format ["%1: [Antistasi] | INFO | initVar | FFAA Detected.",servertime];};
-
+// SFP DETECTION
+if isClass (configFile >> "CfgPatches" >> "sfp_g36c") then {activeSFP = true; hasSFP = true; diag_log format ["%1: [Antistasi] | INFO | initVar | Swedish Forces Pack Detected.",servertime];};
+if isClass (configfile >> "CfgPatches" >> "HAFM_NH90") then {activeHAFM = true; hasSFP = true; diag_log format ["%1: [Antistasi] | INFO | initVar | Hellenic Armed Forces Mod Detected.",servertime];};
+if isClass (configfile >> "CfgPatches" >> "ffp_vehicle_weapons") then {activeFFP = true; hasSFP = true; diag_log format ["%1: [Antistasi] | INFO | initVar | Finnish Forces Pack Detected.",servertime];};
 ////////////////////////////////////
 //        BUILDINGS LISTS        ///
 ////////////////////////////////////

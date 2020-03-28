@@ -14,7 +14,9 @@ forcedSpawn = [];
 citiesX = [];
 
 [] call A3A_fnc_prepareMarkerArrays;
-
+//Carrier FLAGS
+if (isServer) then {"NATO_carrier" setMarkertype flagNATOmrk};
+if (isServer) then {"CSAT_carrier" setMarkertype flagCSATmrk};
 private ["_name", "_sizeX", "_sizeY", "_size", "_pos", "_mrk"];
 
 
@@ -282,7 +284,7 @@ if (count _posAntennas > 0) then {
 			_antenna = _antennaProv select 0;
 
 			if (_i in _blacklistPos) then {
-				_antenna setdamage 1;	
+				_antenna setdamage 1;
 			} else {
 				_antenna = ([_antenna] call _replaceBadAntenna);
 				antennas pushBack _antenna;
