@@ -21,7 +21,7 @@ if ((gameMode != 4) and (!hasFFAA)) then {factionFIA = ""};
 
 //Flag Images
 NATOFlag = "BWA3_Flag_Germany";
-NATOFlagTexture = "\A3\Data_F\Flags\flag_nato_co.paa"; // Due to BWA3s Flag being a bitch its gonna be replaced with the Nato flag on recapture.
+NATOFlagTexture = "bwa3_common\data\bwa3_flag_germany_co.paa";
 flagNATOmrk = "flag_Germany";
 if (isServer) then {"NATO_carrier" setMarkerText "Gorch Fock"};
 
@@ -128,7 +128,7 @@ groupsNATOGen = [policeOfficer,policeGrunt];
 //Military Vehicles
 //Lite
 vehNATOBike = "B_Quadbike_01_F";
-vehNATOLightArmed = ["BWA3_Eagle_FLW100_Tropen","rhsusf_m1025_d_s_m2","rhsusf_CGRCAT1A2_M2_usmc_d","rhsusf_M1117_W","rhsusf_M1220_M2_usarmy_d","rhsusf_M1237_M2_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_m1045_d_s"];
+vehNATOLightArmed = ["BWA3_Eagle_FLW100_Tropen","rhsusf_m1025_d_s_m2","rhsusf_CGRCAT1A2_M2_usmc_d","rhsusf_M1117_D","rhsusf_M1220_M2_usarmy_d","rhsusf_M1237_M2_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_m1045_d_s"];
 vehNATOLightUnarmed = ["BWA3_Eagle_Tropen","rhsusf_m1025_d_s","rhsusf_m998_d_s_2dr","rhsusf_m998_d_s_2dr_fulltop","rhsusf_m998_d_s_4dr"];
 vehNATOTrucks = ["rhsusf_M1078A1P2_d_open_fmtv_usarmy","rhsusf_M1078A1P2_B_d_fmtv_usarmy","rhsusf_M1078A1P2_B_d_open_fmtv_usarmy","rhsusf_M1083A1P2_d_fmtv_usarmy","rhsusf_M1083A1P2_B_M2_d_fmtv_usarmy"];
 vehNATOCargoTrucks = [];
@@ -156,7 +156,7 @@ vehNATOAttackHelis = ["RHS_MELB_AH6M_L","RHS_AH64D","RHS_UH1Y_d","RHS_AH1Z","BWA
 vehNATOUAV = "B_UAV_02_F";
 vehNATOUAVSmall = "B_UAV_01_F";
 //Artillery
-vehNATOMRLS = "rhsusf_m109_usarmy";
+vehNATOMRLS = "rhsusf_m109d_usarmy";
 vehNATOMRLSMags = "rhs_mag_155mm_m795_28";
 //Combined Arrays
 vehNATONormal = vehNATOLight + vehNATOTrucks + [vehNATOAmmoTruck, "rhsusf_M978A4_BKIT_usarmy_wd","rhsusf_m113_usarmy_medical", vehNATORepairTruck];

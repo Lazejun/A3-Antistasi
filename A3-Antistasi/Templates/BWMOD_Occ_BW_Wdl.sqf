@@ -13,7 +13,7 @@ if ((gameMode != 4) and (!hasFFAA)) then {factionFIA = "BWA3_Faction_Multi"};
 
 //Flag Images
 NATOFlag = "BWA3_Flag_Germany";
-NATOFlagTexture = "\A3\Data_F\Flags\flag_nato_co.paa"; // Due to BWA3s Flag being a bitch its gonna be replaced with the Nato flag on recapture.
+NATOFlagTexture = "bwa3_common\data\bwa3_flag_germany_co.paa";
 flagNATOmrk = "flag_Germany";
 if (isServer) then {"NATO_carrier" setMarkerText "Gorch Fock"};
 
