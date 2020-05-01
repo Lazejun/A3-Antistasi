@@ -41,18 +41,14 @@
 			["rhsusf_ANPVS_15",1],
 			["BWA3_DM25",2,1],
 			["BWA3_DM51A1",1,1],
-			["RHS_Mag_Mk84",1,1],
 			["BWA3_15Rnd_9x19_P8",2,15],
 			["BWA3_20Rnd_762x51_G28_Tracer_Dim",5,20]
-		] +	_aceFlashlight
+			]
+			+ _aceFlashlight
+			+ _aceM84
 	],
 
-	[//Backpack
-		"BWA3_AssaultPack_Multi",						//Backpack
-		[//Inventory
-			[""]
-		]
-	],
+	[], //Backpack
 
 	"BWA3_CrewmanKSK_Fleck",				//Headgear
 	SelectRandom 										//Facewear
@@ -70,8 +66,8 @@
 
 	[//Item
 		"ItemMap",											//Map
-		"BWA3_ItemNaviPad",											//Terminal
-		["TF_RF7800STR"] call _fnc_tfarRadio,				//Radio
+		"ItemGPS",											//Terminal
+		["TF_ANPRC152"] call _fnc_tfarRadio,				//Radio
 		"ItemCompass",										//Compass
 		_tfarMicroDAGRNoArray,										//Watch
 		""													//Goggles
