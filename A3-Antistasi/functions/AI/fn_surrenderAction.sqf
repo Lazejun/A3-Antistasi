@@ -1,3 +1,4 @@
+private _filename = "fn_surrenderAction";
 params ["_unit"];
 
 if (typeOf _unit == "Fin_random_F") exitWith {};		// dogs do not surrender?
@@ -37,7 +38,7 @@ _unit addEventHandler ["HandleDamage",
 // create surrender box
 private _boxX = "Box_IND_Wps_F" createVehicle position _unit;
 _boxX allowDamage false;
-_boxX call jn_fnc_logistics_addAction;
+//_boxX call jn_fnc_logistics_addAction;
 clearMagazineCargoGlobal _boxX;
 clearWeaponCargoGlobal _boxX;
 clearItemCargoGlobal _boxX;
@@ -85,7 +86,10 @@ if (!isNil "_markerX") then
 	};
 
 // timed cleanup functions
+[3,format["Cleanup called for unit:%1",_unit],_filename] call A3A_fnc_log;
 [_unit] spawn A3A_fnc_postmortem;
+
+[3,format["Cleanup called for boxx:%1",_boxX],_filename] call A3A_fnc_log;
 [_boxX] spawn A3A_fnc_postmortem;
 
 sleep 3;
