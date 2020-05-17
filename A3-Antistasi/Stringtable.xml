@@ -658,6 +658,14 @@
         <Original>Antistasi Virolahti</Original>
         <English>Antistasi Virolahti</English>
       </Key>
+      <Key ID="STR_antistasi_mission_info_virolahtiB_mapname_short_text">
+        <Original>Antistasi Virolahti (BLUFOR)</Original>
+        <English>Antistasi Virolahti (BLUFOR)</English>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_virolahtiB_mapname_text">
+        <Original>Antistasi - Liberation of Virolahti (BLUFOR)</Original>
+        <English>Antistasi - Liberation of Virolahti (BLUFOR)</English>
+      </Key>
       <Key ID="STR_antistasi_mission_info_stratis_mapname_short_text">
         <Original>Antistasi Stratis</Original>
         <English>Antistasi Stratis</English>
