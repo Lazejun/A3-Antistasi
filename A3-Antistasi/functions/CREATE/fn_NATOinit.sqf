@@ -120,7 +120,7 @@ if !(hasIFA) then
 {
     if (sunOrMoon < 1) then
     {
-        if (!hasRHS) then
+        if (!hasRHS or hasBWMOD) then
         {
             if ((faction _unit != factionMaleOccupants) and (faction _unit != factionMaleInvaders) and (_unit != leader (group _unit))) then
             {
@@ -203,7 +203,7 @@ if !(hasIFA) then
     }
     else
     {
-        if (!hasRHS) then
+        if (!hasRHS or hasBWMOD) then
         {
             if ((faction _unit != factionMaleOccupants) and (faction _unit != factionMaleInvaders)) then
             {

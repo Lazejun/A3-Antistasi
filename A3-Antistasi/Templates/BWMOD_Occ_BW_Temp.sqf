@@ -7,7 +7,7 @@ nameOccupants = "BW";
 //Police Faction
 factionGEN = "BLU_GEN_F";
 //SF Faction
-factionMaleOccupants = "BWA3_Faction_Fleck";
+factionMaleOccupants = "";
 //Miltia Faction
 if ((gameMode != 4) and (!hasFFAA)) then {factionFIA = "BWA3_Faction_Multi"};
 
