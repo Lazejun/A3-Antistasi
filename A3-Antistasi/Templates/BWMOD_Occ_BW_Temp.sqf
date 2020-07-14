@@ -26,17 +26,17 @@ NATOAmmobox = "B_supplyCrate_F";
 //PvP Loadouts
 NATOPlayerLoadouts = [
 	//Team Leader
-	["BWmod_KSK_teamLeader_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_Teamleader_Multi"] call A3A_fnc_getLoadout,
 	//Medic
-	["BWmod_KSK_medic_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_Medic_Multi"] call A3A_fnc_getLoadout,
 	//Autorifleman
-	["BWmod_KSK_machineGunner_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_MachineGunner_Multi"] call A3A_fnc_getLoadout,
 	//Marksman
-	["BWmod_KSK_marksman_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_Marksman_Multi"] call A3A_fnc_getLoadout,
 	//Anti-tank Scout
-	["BWmod_KSK_AT_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_AT_Multi"] call A3A_fnc_getLoadout,
 	//AT2
-	["BWmod_KSK_AT2_multi"] call A3A_fnc_getLoadout
+	["BWmod_KSK_AT2_Multi"] call A3A_fnc_getLoadout
 ];
 
 //PVP Player Vehicles
@@ -120,15 +120,15 @@ groupsNATOGen = [policeOfficer,policeGrunt];
 //Military Vehicles
 //Lite
 vehNATOBike = "B_Quadbike_01_F";
-vehNATOLightArmed = ["BWA3_Eagle_FLW100_Fleck","rhsusf_CGRCAT1A2_M2_usmc_wd","rhsusf_CGRCAT1A2_Mk19_usmc_wd","rhsusf_M1117_W","rhsusf_M1220_M2_usarmy_wd","rhsusf_M1237_M2_usarmy_wd"];
-vehNATOLightUnarmed = ["BWA3_Eagle_Fleck","rhsusf_m1025_w_s","rhsusf_m998_w_s_2dr","rhsusf_m998_w_s_2dr_fulltop","rhsusf_m998_w_s_4dr"];
-vehNATOTrucks = ["rhsusf_M1078A1P2_wd_open_fmtv_usarmy","rhsusf_M1078A1P2_B_wd_fmtv_usarmy","rhsusf_M1078A1P2_B_wd_open_fmtv_usarmy","rhsusf_M1083A1P2_wd_fmtv_usarmy","rhsusf_M1083A1P2_B_M2_wd_fmtv_usarmy"];
+vehNATOLightArmed = ["BWA3_Eagle_FLW100_Fleck","rhsusf_m1025_w_s_m2","rhsusf_CGRCAT1A2_M2_usmc_wd","rhsusf_M1220_M2_usarmy_wd","rhsusf_M1237_M2_usarmy_wd","rhsusf_M1238A1_M2_socom_wd","rhsusf_m1240a1_m240_usmc_wd"];
+vehNATOLightUnarmed = ["BWA3_Eagle_Fleck","rhsusf_m1025_w_s","rhsusf_m998_w_s_2dr","rhsusf_m998_w_s_2dr_fulltop","rhsusf_m998_w_s_4dr","rhsusf_CGRCAT1A2_usmc_wd","rhsusf_m1240a1_usmc_wd"];
+vehNATOTrucks = ["rhsusf_M1078A1P2_WD_open_fmtv_usarmy","rhsusf_M1078A1P2_B_WD_fmtv_usarmy","rhsusf_M1078A1P2_B_WD_open_fmtv_usarmy","rhsusf_M1083A1P2_WD_fmtv_usarmy","rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy"];
 vehNATOCargoTrucks = [];
 vehNATOAmmoTruck = "rhsusf_M977A4_AMMO_BKIT_usarmy_wd";
 vehNATORepairTruck = "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd";
 vehNATOLight = vehNATOLightArmed + vehNATOLightUnarmed;
 //Armored
-vehNATOAPC = ["BWA3_Puma_Fleck","RHS_M2A3_BUSKI_wd","RHS_M2A2_BUSKI_WD","rhsusf_m113_usarmy","rhsusf_m113_usarmy_M240"];
+vehNATOAPC = ["BWA3_Puma_Fleck","rhsusf_stryker_m1126_m2_wd","rhsusf_stryker_m1127_m2_wd","rhsusf_stryker_m1132_m2_wd","RHS_M2A3_BUSKI_wd","RHS_M2A2_BUSKI_WD","rhsusf_m113_usarmy","rhsusf_m113_usarmy_M240"];
 vehNATOTank = "BWA3_Leopard2_Fleck";
 vehNATOAA = "RHS_M6_wd";
 vehNATOAttack = vehNATOAPC + [vehNATOTank];
@@ -157,7 +157,7 @@ vehNATOAir = vehNATOTransportHelis + vehNATOAttackHelis + [vehNATOPlane,vehNATOP
 //Militia Vehicles
 if ((gameMode != 4) and (!hasFFAA)) then
 	{
-	vehFIAArmedCar = "BWA3_Eagle_FLW100_Fleck";
+	vehFIAArmedCar = "rhsusf_m1025_w_s_m2";
 	vehFIATruck = "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy";
 	vehFIACar = "BWA3_Eagle_Fleck";
 	};

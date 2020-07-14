@@ -1,11 +1,3 @@
-//BW CALLS
-if (worldName == "tanoa") exitWith {call compile preProcessFileLineNumbers "Templates\BWMOD_Occ_BW_Wdl.sqf"};
-if (worldName == "chernarus_summer") exitWith {call compile preProcessFileLineNumbers "Templates\BWMOD_Occ_BW_Wdl.sqf"};
-if (worldName == "chernarus_winter") exitWith {call compile preProcessFileLineNumbers "Templates\BWMOD_Occ_BW_Wdl.sqf"};
-if (worldName == "Enoch") exitWith {call compile preProcessFileLineNumbers "Templates\BWMOD_Occ_BW_Wdl.sqf"};
-if (worldName == "Temblelan") exitWith {call compile preProcessFileLineNumbers "Templates\BWMOD_Occ_BW_Wdl.sqf"};
-if (worldName == "vt7") exitWith {call compile preProcessFileLineNumbers "Templates\BWMOD_Occ_BW_Wdl.sqf"};
-if (worldName == "rhspkl") exitWith {call compile preProcessFileLineNumbers "Templates\BWMOD_Occ_BW_Wdl.sqf"};
 ////////////////////////////////////
 //       NAMES AND FLAGS         ///
 ////////////////////////////////////
@@ -17,7 +9,7 @@ factionGEN = "BLU_GEN_F";
 //SF Faction
 factionMaleOccupants = "BWA3_Faction_Tropen";
 //Miltia Faction
-if ((gameMode != 4) and (!hasFFAA)) then {factionFIA = ""};
+if ((gameMode != 4) and (!hasFFAA)) then {factionFIA = "BWA3_Faction_Multi"};
 
 //Flag Images
 NATOFlag = "BWA3_Flag_Germany";
@@ -34,17 +26,17 @@ NATOAmmobox = "B_supplyCrate_F";
 //PvP Loadouts
 NATOPlayerLoadouts = [
 	//Team Leader
-	["BWmod_KSK_teamLeader_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_Teamleader_Multi"] call A3A_fnc_getLoadout,
 	//Medic
-	["BWmod_KSK_medic_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_Medic_Multi"] call A3A_fnc_getLoadout,
 	//Autorifleman
-	["BWmod_KSK_machineGunner_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_MachineGunner_Multi"] call A3A_fnc_getLoadout,
 	//Marksman
-	["BWmod_KSK_marksman_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_Marksman_Multi"] call A3A_fnc_getLoadout,
 	//Anti-tank Scout
-	["BWmod_KSK_AT_multi"] call A3A_fnc_getLoadout,
+	["BWmod_KSK_AT_Multi"] call A3A_fnc_getLoadout,
 	//AT2
-	["BWmod_KSK_AT2_multi"] call A3A_fnc_getLoadout
+	["BWmod_KSK_AT2_Multi"] call A3A_fnc_getLoadout
 ];
 
 //PVP Player Vehicles
@@ -128,15 +120,15 @@ groupsNATOGen = [policeOfficer,policeGrunt];
 //Military Vehicles
 //Lite
 vehNATOBike = "B_Quadbike_01_F";
-vehNATOLightArmed = ["BWA3_Eagle_FLW100_Tropen","rhsusf_m1025_d_s_m2","rhsusf_CGRCAT1A2_M2_usmc_d","rhsusf_M1117_D","rhsusf_M1220_M2_usarmy_d","rhsusf_M1237_M2_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_m1045_d_s"];
-vehNATOLightUnarmed = ["BWA3_Eagle_Tropen","rhsusf_m1025_d_s","rhsusf_m998_d_s_2dr","rhsusf_m998_d_s_2dr_fulltop","rhsusf_m998_d_s_4dr"];
-vehNATOTrucks = ["rhsusf_M1078A1P2_d_open_fmtv_usarmy","rhsusf_M1078A1P2_B_d_fmtv_usarmy","rhsusf_M1078A1P2_B_d_open_fmtv_usarmy","rhsusf_M1083A1P2_d_fmtv_usarmy","rhsusf_M1083A1P2_B_M2_d_fmtv_usarmy"];
+vehNATOLightArmed = ["BWA3_Eagle_FLW100_Tropen","rhsusf_m1025_d_s_m2","rhsusf_CGRCAT1A2_M2_usmc_d","rhsusf_M1220_M2_usarmy_d","rhsusf_M1237_M2_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_m1240a1_m240_usmc_d"];
+vehNATOLightUnarmed = ["BWA3_Eagle_Tropen","rhsusf_m1025_d_s","rhsusf_m998_d_s_2dr","rhsusf_m998_d_s_2dr_fulltop","rhsusf_m998_d_s_4dr","rhsusf_CGRCAT1A2_usmc_d","rhsusf_m1240a1_usmc_d"];
+vehNATOTrucks = ["rhsusf_M1078A1P2_D_open_fmtv_usarmy","rhsusf_M1078A1P2_B_D_fmtv_usarmy","rhsusf_M1078A1P2_B_D_open_fmtv_usarmy","rhsusf_M1083A1P2_D_fmtv_usarmy","rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy"];
 vehNATOCargoTrucks = [];
 vehNATOAmmoTruck = "rhsusf_M977A4_AMMO_BKIT_usarmy_d";
 vehNATORepairTruck = "rhsusf_M977A4_REPAIR_BKIT_usarmy_d";
 vehNATOLight = vehNATOLightArmed + vehNATOLightUnarmed;
 //Armored
-vehNATOAPC = ["BWA3_Puma_Tropen","RHS_M2A3_BUSKI","RHS_M2A2_BUSKI","rhsusf_m113d_usarmy","rhsusf_m113d_usarmy_M240"];
+vehNATOAPC = ["BWA3_Puma_Tropen","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1127_m2_d","rhsusf_stryker_m1132_m2_d","RHS_M2A3_BUSKI","rhsusf_M1237_MK19_usarmy_d","RHS_M2A2_BUSKI","rhsusf_m113d_usarmy","rhsusf_m113d_usarmy_M240"];
 vehNATOTank = "BWA3_Leopard2_Tropen";
 vehNATOAA = "RHS_M6";
 vehNATOAttack = vehNATOAPC + [vehNATOTank];
@@ -165,13 +157,13 @@ vehNATOAir = vehNATOTransportHelis + vehNATOAttackHelis + [vehNATOPlane,vehNATOP
 //Militia Vehicles
 if ((gameMode != 4) and (!hasFFAA)) then
 	{
-	vehFIAArmedCar = "BWA3_Eagle_FLW100_Tropen";
+	vehFIAArmedCar = "rhsusf_m1025_d_s_m2";
 	vehFIATruck = "rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy";
 	vehFIACar = "BWA3_Eagle_Tropen";
 	};
 
 	//Police Vehicles
-	vehPoliceCar = "rhsusf_mrzr4_d";
+	vehPoliceCar = "rhsusf_mrzr4_d_mud";
 
 	////////////////////////////////////
 	//        STATIC WEAPONS         ///
