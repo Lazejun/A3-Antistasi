@@ -120,6 +120,7 @@ vehCSATLightArmed = ["O_T_MRAP_02_gmg_ghex_F","O_T_MRAP_02_hmg_ghex_F","O_T_LSV_
 vehCSATLightUnarmed = ["O_T_MRAP_02_ghex_F","O_T_LSV_02_unarmed_F"];
 vehCSATTrucks = ["O_T_Truck_03_transport_ghex_F","O_T_Truck_03_covered_ghex_F"];
 vehCSATAmmoTruck = "O_T_Truck_03_ammo_ghex_F";
+vehCSATRepairTruck = "O_T_Truck_03_repair_ghex_F";
 vehCSATLight = vehCSATLightArmed + vehCSATLightUnarmed;
 //Armored
 vehCSATAPC = ["O_T_APC_Wheeled_02_rcws_ghex_F","O_T_APC_Tracked_02_cannon_ghex_F"];
@@ -145,7 +146,7 @@ vehCSATUAVSmall = "O_UAV_01_F";
 vehCSATMRLS = "O_T_MBT_02_arty_ghex_F";
 vehCSATMRLSMags = "32Rnd_155mm_Mo_shells";
 //Combined Arrays
-vehCSATNormal = vehCSATLight + vehCSATTrucks + [vehCSATAmmoTruck, "O_T_Truck_03_fuel_ghex_F", "O_T_Truck_03_medical_ghex_F", "O_T_Truck_03_repair_ghex_F"];
+vehCSATNormal = vehCSATLight + vehCSATTrucks + [vehCSATAmmoTruck, vehCSATRepairTruck, "O_T_Truck_03_fuel_ghex_F", "O_T_Truck_03_medical_ghex_F"];
 vehCSATAir = vehCSATTransportHelis + vehCSATAttackHelis + [vehCSATPlane,vehCSATPlaneAA] + vehCSATTransportPlanes;
 
 //Militia Vehicles
@@ -160,19 +161,19 @@ if (gameMode == 4) then
 //        STATIC WEAPONS         ///
 ////////////////////////////////////
 //Assembled Statics
-CSATMG = "O_HMG_01_high_F";
+CSATMG = "I_G_HMG_02_high_F";
 staticATInvaders = "O_T_static_AT_F";
 staticAAInvaders = "O_static_AA_F";
 CSATMortar = "O_Mortar_01_F";
 
 //Static Weapon Bags
-MGStaticCSATB = "O_HMG_01_weapon_F";
+MGStaticCSATB = "I_G_HMG_02_high_weapon_F";
 ATStaticCSATB = "O_AT_01_weapon_F";
 AAStaticCSATB = "O_AA_01_weapon_F";
 MortStaticCSATB = "O_Mortar_01_weapon_F";
 //Short Support
-supportStaticCSATB = "O_HMG_01_support_F";
+supportStaticCSATB = "I_G_HMG_02_support_F";
 //Tall Support
-supportStaticCSATB2 = "O_HMG_01_support_high_F";
+supportStaticCSATB2 = "I_G_HMG_02_support_high_F";
 //Mortar Support
 supportStaticCSATB3 = "O_Mortar_01_support_F";

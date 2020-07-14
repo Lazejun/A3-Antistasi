@@ -64,9 +64,10 @@ garrison setVariable [format ["%1_requested", _markerX], [], true];
 if (_winner == teamPlayer) then
 {
 	_super = if (_markerX in airportsX) then {true} else {false};
-	[[_markerX,_looser,"",_super],"A3A_fnc_patrolCA"] call A3A_fnc_scheduler;
+	[_markerX,_looser,"",_super] spawn A3A_fnc_patrolCA;
 	//sleep 15;
-	[[_markerX],"A3A_fnc_autoGarrison"] call A3A_fnc_scheduler;
+	// Removed for the moment, old broken stuff
+//	[[_markerX],"A3A_fnc_autoGarrison"] call A3A_fnc_scheduler;
 }
 else
 {
@@ -105,15 +106,21 @@ if (_markerX in airportsX) then
 	if (_winner == teamPlayer) then
 	{
 		[0,10,_positionX] remoteExec ["A3A_fnc_citySupportChange",2];
+        [
+            3,
+            "Rebels took an airport",
+            "aggroEvent",
+            true
+        ] call A3A_fnc_log;
 		if (_looser == Occupants) then
 		{
-			_prestigeOccupants = [50, 60];
-			_prestigeInvaders = [-25, 60];
+			_prestigeOccupants = [50, 150];
+			_prestigeInvaders = [-25, 90];
 		}
 		else
 		{
-			_prestigeOccupants = [-25, 60];
-			_prestigeInvaders = [50, 60];
+			_prestigeOccupants = [-25, 90];
+			_prestigeInvaders = [50, 150];
 		};
 	}
 	else
@@ -130,15 +137,21 @@ if (_markerX in airportsX) then
 		};
 		if (_looser == teamPlayer) then
 		{
-            if(_winner == Occupant) then
+            [
+                3,
+                "Rebels lost an airport",
+                "aggroEvent",
+                true
+            ] call A3A_fnc_log;
+            if(_winner == Occupants) then
             {
-                _prestigeOccupants = [-40, 60];
-                _prestigeInvaders = [-20, 60];
+                _prestigeOccupants = [-40, 90];
+                _prestigeInvaders = [-20, 90];
             }
             else
             {
-                _prestigeOccupants = [-20, 60];
-                _prestigeInvaders = [-40, 60];
+                _prestigeOccupants = [-20, 90];
+                _prestigeInvaders = [-40, 90];
             };
 		};
 	};
@@ -154,27 +167,39 @@ if (_markerX in outposts) then
 		server setVariable [_markerX,dateToNumber date,true];
 		if (_looser == teamPlayer) then
 		{
+            [
+                3,
+                "Rebels lost an outpost",
+                "aggroEvent",
+                true
+            ] call A3A_fnc_log;
 			if (_winner == Occupants) then
             {
-                _prestigeOccupants = [-10, 30];
+                _prestigeOccupants = [-10, 90];
             }
             else
             {
-                _prestigeInvaders = [-10, 30];
+                _prestigeInvaders = [-10, 90];
             };
 		};
 	}
 	else
 	{
+        [
+            3,
+            "Rebels took an outpost",
+            "aggroEvent",
+            true
+        ] call A3A_fnc_log;
 		if (_looser == Occupants) then
         {
-            _prestigeOccupants = [30, 30];
-            _prestigeInvaders = [-15, 30];
+            _prestigeOccupants = [30, 150];
+            _prestigeInvaders = [-15, 90];
         }
         else
         {
-            _prestigeOccupants = [-15, 30];
-            _prestigeInvaders = [30, 30];
+            _prestigeOccupants = [-15, 90];
+            _prestigeInvaders = [30, 150];
         };
 	};
 	["TaskSucceeded", ["", "Outpost Taken"]] remoteExec ["BIS_fnc_showNotification",_winner];
@@ -186,13 +211,19 @@ if (_markerX in seaports) then
 {
 	if (_winner == teamPlayer) then
 	{
+        [
+            3,
+            "Rebels took a seaport",
+            "aggroEvent",
+            true
+        ] call A3A_fnc_log;
 		if (_looser == Occupants) then
         {
-            _prestigeOccupants = [20, 30];
+            _prestigeOccupants = [20, 120];
         }
         else
         {
-            _prestigeInvaders = [20, 30];
+            _prestigeInvaders = [20, 120];
         };
 	};
 	["TaskSucceeded", ["", "Seaport Taken"]] remoteExec ["BIS_fnc_showNotification",_winner];
@@ -203,13 +234,19 @@ if (_markerX in factories) then
 {
     if (_winner == teamPlayer) then
 	{
+        [
+            3,
+            "Rebels took a factory",
+            "aggroEvent",
+            true
+        ] call A3A_fnc_log;
 		if (_looser == Occupants) then
         {
-            _prestigeOccupants = [20, 30];
+            _prestigeOccupants = [20, 120];
         }
         else
         {
-            _prestigeInvaders = [20, 30];
+            _prestigeInvaders = [20, 120];
         };
 	};
 	["TaskSucceeded", ["", "Factory Taken"]] remoteExec ["BIS_fnc_showNotification",_winner];
@@ -220,13 +257,19 @@ if (_markerX in resourcesX) then
 {
     if (_winner == teamPlayer) then
 	{
+        [
+            3,
+            "Rebels took a resource",
+            "aggroEvent",
+            true
+        ] call A3A_fnc_log;
 		if (_looser == Occupants) then
         {
-            _prestigeOccupants = [20, 30];
+            _prestigeOccupants = [20, 120];
         }
         else
         {
-            _prestigeInvaders = [20, 30];
+            _prestigeInvaders = [20, 120];
         };
 	};
 	["TaskSucceeded", ["", "Resource Taken"]] remoteExec ["BIS_fnc_showNotification",_winner];
@@ -245,6 +288,7 @@ if (_winner == teamPlayer) then
 	//Make the size larger, as rarely does the marker cover the whole outpost.
 	private _staticWeapons = nearestObjects [_positionX, ["StaticWeapon"], _size * 1.5, true];
 	{
+		[_x, teamPlayer, true] call A3A_fnc_vehKilledOrCaptured;
 		if !(_x in staticsToSave) then {
 			staticsToSave pushBack _x;
 		};
@@ -277,6 +321,9 @@ else
 	private _staticWeapons = nearestObjects [_positionX, ["StaticWeapon"], _size * 1.5, true];
 	staticsToSave = staticsToSave - _staticWeapons;
 	publicVariable "staticsToSave";
+	{
+		[_x, _winner, true] call A3A_fnc_vehKilledOrCaptured;
+	} forEach _staticWeapons;
 
 	if (!isNull _flagX) then
 	{

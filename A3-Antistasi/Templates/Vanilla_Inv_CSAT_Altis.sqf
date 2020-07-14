@@ -1,5 +1,3 @@
-//Call to Tanoa Invader Template
-if (worldName == "Tanoa") exitWith {call compile preProcessFileLineNumbers "Templates\Vanilla_Inv_CSAT_Tanoa.sqf"};
 ////////////////////////////////////
 //       NAMES AND FLAGS         ///
 ////////////////////////////////////
@@ -122,6 +120,7 @@ vehCSATLightArmed = ["O_MRAP_02_hmg_F","O_MRAP_02_gmg_F","O_LSV_02_armed_F"];
 vehCSATLightUnarmed = ["O_MRAP_02_F","O_LSV_02_unarmed_F"];
 vehCSATTrucks = ["O_Truck_03_transport_F","O_Truck_03_covered_F"];
 vehCSATAmmoTruck = "O_Truck_03_ammo_F";
+vehCSATRepairTruck = "O_Truck_03_repair_F";
 vehCSATLight = vehCSATLightArmed + vehCSATLightUnarmed;
 //Armored
 vehCSATAPC = ["O_APC_Wheeled_02_rcws_v2_F","O_APC_Tracked_02_cannon_F"];
@@ -147,7 +146,7 @@ vehCSATUAVSmall = "O_UAV_01_F";
 vehCSATMRLS = "O_MBT_02_arty_F";
 vehCSATMRLSMags = "32Rnd_155mm_Mo_shells";
 //Combined Arrays
-vehCSATNormal = vehCSATLight + vehCSATTrucks + [vehCSATAmmoTruck, "O_Truck_03_fuel_F", "O_Truck_03_medical_F", "O_Truck_03_repair_F"];
+vehCSATNormal = vehCSATLight + vehCSATTrucks + [vehCSATAmmoTruck, vehCSATRepairTruck, "O_Truck_03_fuel_F", "O_Truck_03_medical_F"];
 vehCSATAir = vehCSATTransportHelis + vehCSATAttackHelis + [vehCSATPlane,vehCSATPlaneAA] + vehCSATTransportPlanes;
 
 //Militia Vehicles
@@ -162,19 +161,19 @@ if (gameMode == 4) then
 //        STATIC WEAPONS         ///
 ////////////////////////////////////
 //Assembled Statics
-CSATMG = "O_HMG_01_high_F";
+CSATMG = "I_G_HMG_02_high_F";
 staticATInvaders = "O_static_AT_F";
 staticAAInvaders = "O_static_AA_F";
 CSATMortar = "O_Mortar_01_F";
 
 //Static Weapon Bags
-MGStaticCSATB = "O_HMG_01_high_weapon_F";
+MGStaticCSATB = "I_G_HMG_02_high_weapon_F";
 ATStaticCSATB = "O_AT_01_weapon_F";
 AAStaticCSATB = "O_AA_01_weapon_F";
 MortStaticCSATB = "O_Mortar_01_weapon_F";
 //Short Support
-supportStaticCSATB = "O_HMG_01_support_F";
+supportStaticCSATB = "I_G_HMG_02_support_F";
 //Tall Support
-supportStaticCSATB2 = "O_HMG_01_support_high_F";
+supportStaticCSATB2 = "I_G_HMG_02_support_high_F";
 //Mortar Support
 supportStaticCSATB3 = "O_Mortar_01_support_F";
