@@ -8,7 +8,7 @@ class EditorData
 	toggles=1541;
 	class ItemIDProvider
 	{
-		nextID=954;
+		nextID=956;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=363;
+		nextID=378;
 	};
 	class Camera
 	{
@@ -2576,7 +2576,7 @@ class Mission
 					colorName="ColorGreen";
 					a=15.436396;
 					b=6;
-					angle=197.55229;
+					angle=197.55226;
 					id=746;
 				};
 				class Item6
@@ -2615,7 +2615,7 @@ class Mission
 					colorName="ColorGreen";
 					a=20.198;
 					b=6;
-					angle=258.38794;
+					angle=79.555222;
 					id=726;
 				};
 				class Item9
@@ -2883,7 +2883,7 @@ class Mission
 					colorName="ColorGreen";
 					a=9.6424713;
 					b=4.9717536;
-					angle=154.82983;
+					angle=154.82977;
 					id=775;
 				};
 				class Item3
@@ -3222,7 +3222,7 @@ class Mission
 					colorName="ColorGreen";
 					a=16.384659;
 					b=6;
-					angle=146.86835;
+					angle=146.86829;
 					id=804;
 					atlOffset=-0.3298645;
 				};
@@ -3250,7 +3250,7 @@ class Mission
 					colorName="ColorGreen";
 					a=10;
 					b=6;
-					angle=128.16197;
+					angle=128.16196;
 					id=807;
 					atlOffset=-2.3726044;
 				};
@@ -3264,7 +3264,7 @@ class Mission
 					colorName="ColorGreen";
 					a=11.753829;
 					b=6;
-					angle=70.664551;
+					angle=70.664536;
 					id=808;
 					atlOffset=-1.5412292;
 				};
@@ -4035,7 +4035,7 @@ class Mission
 					colorName="ColorGreen";
 					a=22.436638;
 					b=6;
-					angle=115.8035;
+					angle=115.80349;
 					id=852;
 					atlOffset=0.95000005;
 				};
@@ -4085,7 +4085,7 @@ class Mission
 				{
 					dataType="Marker";
 					position[]={1719.467,2.171,11975.972};
-					name="seap_5_vehicle_2";
+					name="seap_5_vehicle";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorGreen";
@@ -4105,7 +4105,7 @@ class Mission
 					colorName="ColorGreen";
 					a=15.928885;
 					b=4.3750725;
-					angle=0.65071869;
+					angle=0.65071857;
 					id=837;
 					atlOffset=0.78999996;
 				};
