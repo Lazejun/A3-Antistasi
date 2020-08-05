@@ -7,7 +7,7 @@ nameInvaders = "CSAT";
 //SF Faction
 factionMaleInvaders = "OPF_V_F";
 //Miltia Faction
-if (gameMode == 4) then {factionFIA = "OPF_G_F"};
+if (gameMode == 4) then {factionFIA = ""};
 
 //Flag Images
 CSATFlag = "Flag_CSAT_F";

@@ -5,7 +5,7 @@
 nameInvaders = "CSAT";
 
 //SF Faction
-factionMaleInvaders = "OPF_V_F";
+factionMaleInvaders = "OPF_R_F";
 //Miltia Faction
 if (gameMode == 4) then {factionFIA = ""};
 
@@ -49,7 +49,7 @@ CSATOfficer = "O_officer_F";
 CSATBodyG = "O_V_Soldier_hex_F";
 CSATCrew = "O_crew_F";
 CSATMarksman = "O_soldier_M_F";
-staticCrewInvaders = "O_support_MG_F";
+staticCrewInvaders = "O_Soldier_F";
 CSATPilot = "O_Pilot_F";
 
 //Militia Units
@@ -73,13 +73,13 @@ groupsCSATAT = ["O_Soldier_TL_F","O_Soldier_AT_F","O_Soldier_AT_F","O_Soldier_AA
 groupsCSATmid = [["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_GL_F","O_Soldier_LAT_F"],groupsCSATAA,groupsCSATAT];
 //Squads
 CSATSquad = ["O_Soldier_SL_F","O_Soldier_F","O_Soldier_LAT_F","O_soldier_M_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_medic_F"];
-CSATSpecOp = ["O_V_Soldier_TL_hex_F","O_V_Soldier_JTAC_hex_F","O_V_Soldier_M_hex_F","O_V_Soldier_Exp_hex_F","O_V_Soldier_LAT_hex_F","O_V_Soldier_Medic_hex_F"];
+CSATSpecOp = ["O_R_recon_TL_F","O_R_recon_JTAC_F","O_R_recon_M_F","O_R_recon_exp_F","O_R_recon_LAT_F","O_R_recon_medic_F"];
 groupsCSATSquad =
 	[
 	CSATSquad,
 	["O_Soldier_SL_F","O_Soldier_AR_F","O_Soldier_GL_F","O_soldier_M_F","O_Soldier_AT_F","O_Soldier_AAT_F","O_Soldier_A_F","O_medic_F"],
-	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_support_Mort_F","O_support_AMort_F","O_medic_F"],
-	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_support_MG_F","O_support_AMG_F","O_medic_F"],
+	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_Soldier_LAT_F","O_Soldier_LAT_F","O_medic_F"],
+	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_Soldier_LAT_F","O_Soldier_LAT_F","O_medic_F"],
 	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_Soldier_AA_F","O_Soldier_AAA_F","O_medic_F"],
 	["O_Soldier_SL_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_A_F","O_engineer_F","O_engineer_F","O_medic_F"]
 	];
