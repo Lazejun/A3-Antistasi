@@ -739,6 +739,15 @@
         <English>Antistasi - Liberation of Stratis</English>
         <French>Antistasi - Libération de Stratis</French>
       </Key>
+      <Key ID="STR_antistasi_mission_info_stratisB_mapname_short_text">
+        <Original>Antistasi Stratis (BLUFOR)</Original>
+        <English>Antistasi Stratis (BLUFOR)</English>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_stratisB_mapname_text">
+        <Original>Antistasi - Liberation of Stratis (BLUFOR)</Original>
+        <English>Antistasi - Liberation of Stratis (BLUFOR)</English>
+        <French>Antistasi - Libération de Stratis (BLUFOR)</French>
+      </Key>
       <Key ID="STR_antistasi_mission_info_altis_mapname_short_text">
         <Original>Antistasi Altis</Original>
         <English>Antistasi Altis</English>
@@ -1334,7 +1343,7 @@
       </Key>
       <Key ID="STR_antistasi_journal_entry_text_commander_12">
         <Original>Use the radio and select a spot on the map with good field of vision. A group of snipers will join you. Send them to the selected place and they will spot for you, attempting to remain hidden and not engaging enemies upon contact.</Original>
-        <French>Utilisez la radio et sélectionnez un endroit sur la carte avec un bon champ de vision. Un groupe de tireurs d'élite se joindra à vous. Envoyez-les à l'endroit sélectionné et ils vous repéreront, essayant de rester cachés et n'engageant pas les ennemis au contact.</French> 
+        <French>Utilisez la radio et sélectionnez un endroit sur la carte avec un bon champ de vision. Un groupe de tireurs d'élite se joindra à vous. Envoyez-les à l'endroit sélectionné et ils vous repéreront, essayant de rester cachés et n'engageant pas les ennemis au contact.</French>
         <German>Benutze dein Funkgerät und wähle einen Ort auf der Karte mit einer guten Übersicht. Eine Gruppe Scharfschützen wird sich dir anschließen. Schicke diese zu dem gewählten Ort und sie werden dort einen Beobachtungsposten einrichten. Dabei versuchen sie verdeckt zu bleiben und Feinde bei Kontakt nicht anzugreifen.</German>
         <Czech>Použijte rádio a vyberte místo na mapě s dobrým zorným polem. Připojí se k vám skupina ostřelovačů. Pošlete je na vybrané místo a oni tam zřídí pozorovací stanoviště. Snaží se zůstat v utajení a neútočit na nepřátele v kontaktu.</Czech>
       </Key>
@@ -1897,7 +1906,7 @@
       </Key>
       <Key ID="STR_antistasi_journal_entry_text_gamemode_1">
         <Original>%2 vs %1 war.</Original>
-        <French>Guerre %2 vs %1</French> 
+        <French>Guerre %2 vs %1</French>
         <German>Krieg %2 gegen %1</German>
         <Czech>Válka %2 vs %1.</Czech>
       </Key>
