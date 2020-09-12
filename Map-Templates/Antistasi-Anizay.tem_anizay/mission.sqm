@@ -258,7 +258,7 @@ class Mission
 		resistanceWest=0;
 		year=2035;
 		month=6;
-		day=26;
+		day=10;
 		hour=10;
 		minute=0;
 	};
