@@ -49,7 +49,7 @@ CSATOfficer = "O_officer_F";
 CSATBodyG = "O_V_Soldier_hex_F";
 CSATCrew = "O_crew_F";
 CSATMarksman = "O_soldier_M_F";
-staticCrewInvaders = "O_support_MG_F";
+staticCrewInvaders = "O_Soldier_F";
 CSATPilot = "O_Pilot_F";
 
 //Militia Units

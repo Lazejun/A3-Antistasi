@@ -409,11 +409,8 @@ if (hasACE) then {
 if (hasRHS) then {
 	_textX = _textX + ["RHS Detected\n\nAntistasi detects RHS in the server config.\nDepending on the modules will have the following effects.\n\nAFRF: Replaces CSAT by a mix of russian units\n\nUSAF: Replaces NATO by a mix of US units\n\nGREF: Recruited AI will count with RHS as basic weapons, replaces FIA with Chdk units. Adds some civilian trucks"];
 };
-if (hasFFAA) then {
-	_textX = _textX + ["FFAA Detected\n\nAntistasi detects FFAA in the server config.\nFIA Faction will be replaced by Spanish Armed Forces"];
-};
 
-if (hasTFAR or hasACE or hasRHS or hasACRE or hasFFAA) then {
+if (hasTFAR or hasACE or hasRHS or hasACRE) then {
 	[_textX] spawn {
 		sleep 0.5;
 		_textX = _this select 0;

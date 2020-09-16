@@ -506,7 +506,7 @@
         <Czech>Staňte se vůdcem odboje, buďte hrdinou.</Czech>
       </Key>
       <Key ID="STR_antistasi_credits_generic_version_text">
-        <Original>2.3.1</Original>
+        <Original>2.3.1.B</Original>
       </Key>
     </Container>
     <Container name="dialog_vehicle_purchase">
@@ -739,6 +739,15 @@
         <English>Antistasi - Liberation of Stratis</English>
         <French>Antistasi - Libération de Stratis</French>
       </Key>
+      <Key ID="STR_antistasi_mission_info_stratisB_mapname_short_text">
+        <Original>Antistasi Stratis (BLUFOR)</Original>
+        <English>Antistasi Stratis (BLUFOR)</English>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_stratisB_mapname_text">
+        <Original>Antistasi - Liberation of Stratis (BLUFOR)</Original>
+        <English>Antistasi - Liberation of Stratis (BLUFOR)</English>
+        <French>Antistasi - Libération de Stratis (BLUFOR)</French>
+      </Key>
       <Key ID="STR_antistasi_mission_info_altis_mapname_short_text">
         <Original>Antistasi Altis</Original>
         <English>Antistasi Altis</English>
@@ -746,6 +755,14 @@
       <Key ID="STR_antistasi_mission_info_virolahti_mapname_short_text">
         <Original>Antistasi Virolahti</Original>
         <English>Antistasi Virolahti</English>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_virolahtiB_mapname_short_text">
+        <Original>Antistasi Virolahti (BLUFOR)</Original>
+        <English>Antistasi Virolahti (BLUFOR)</English>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_virolahtiB_mapname_text">
+        <Original>Antistasi - Liberation of Virolahti (BLUFOR)</Original>
+        <English>Antistasi - Liberation of Virolahti (BLUFOR)</English>
       </Key>
       <Key ID="STR_antistasi_mission_info_stratis_mapname_short_text">
         <Original>Antistasi Stratis</Original>
@@ -1004,6 +1021,88 @@
         <German>Kampf auf dem Kamelrücken</German>
         <Czech>Bojovat na zádech velblouda</Czech>
       </Key>
+      <Key ID="STR_antistasi_mission_info_tanoaB_mapname_text">
+        <Original>Antistasi - Warlords of the Pacific (BLUFOR)</Original>
+        <English>Antistasi - Warlords of the Pacific (BLUFOR)</English>
+        <French>Antistasi - Les Seigneurs de Guerre du Pacifique (BLUFOR)</French>
+        <Russian>Antistasi - Хозяева Тихого Океана (BLUFOR)</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_tanoaB_mapname_short_text">
+        <Original>Antistasi Tanoa (BLUFOR)</Original>
+        <English>Antistasi Tanoa (BLUFOR)</English>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_maldenB_mapname_text">
+        <Original>Antistasi - Liberation of Malden (BLUFOR)</Original>
+        <English>Antistasi - Liberation of Malden (BLUFOR)</English>
+        <French>Antistasi - La Libération de Malden (BLUFOR)</French>
+        <Russian>Antistasi - Освобождение Мальдена (BLUFOR)</Russian>
+      </Key>
+      <Key ID="STR_antistasi_mission_info_maldenB_mapname_short_text">
+        <Original>Antistasi Malden (BLUFOR) </Original>
+        <English>Antistasi Malden (BLUFOR)</English>
+        <French>Antistasi Malden (BLUFOR)</French>
+        <Russian>Antistasi Мальдена (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_livoniaB_mapname_text">
+      <Original>Antistasi - The Baltic Revolution (BLUFOR)</Original>
+      <English>Antistasi - The Baltic Revolution (BLUFOR)</English>
+      <French>Antistasi - La Révolution Baltique (BLUFOR)</French>
+      <Russian>Antistasi - Балтийская Революция (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_livoniaB_mapname_short_text">
+      <Original>Antistasi Livonia (BLUFOR)</Original>
+      <English>Antistasi Livonia (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_kunduzB_mapname_text">
+      <Original>Antistasi - Battle of Kunduz (BLUFOR)</Original>
+      <English>Antistasi - Battle of Kunduz (BLUFOR)</English>
+      <French>Antistasi - La Bataille de Kanduz (BLUFOR)</French>
+      <Russian>Antistasi - Битва за Кундуз (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_kunduzB_mapname_short_text">
+      <Original>Antistasi Kunduz (BLUFOR)</Original>
+      <English>Antistasi Kunduz (BLUFOR)</English>
+      <French>Antistasi Kanduz (BLUFOR)</French>
+      <Russian>Antistasi Кундуз (BLUFOR)</Russian>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_tembelanB_mapname_text">
+      <Original>Antistasi - Liberation of Tembelan (BLUFOR)</Original>
+      <English>Antistasi - Liberation of Tembelan (BLUFOR)</English>
+      <French>Antistasi - La Libération de Tembelan (BLUFOR)</French>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_tembelanB_mapname_short_text">
+      <Original>Antistasi Tembelan (BLUFOR)</Original>
+      <English>Antistasi Tembelan (BLUFOR)</English>
+      <French>Antistasi Tembelan (BLUFOR)</French>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_anizayB_mapname_text">
+      <Original>Antistasi - Liberation of Anizay (BLUFOR)</Original>
+      <English>Antistasi - Liberation of Anizay (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_anizayB_blurb_text">
+      <Original>Fought on the camel's back (BLUFOR)</Original>
+      <English>Fought on the camel's back (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernaB_mapname_text">
+      <Original>Antistasi - Kolkhoz in revolt (BLUFOR)</Original>
+      <English>Antistasi - Kolkhoz in revolt (BLUFOR)</English>
+      <French />
+      <Russian />
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernawinterB_mapname_text">
+      <Original>Antistasi - Chilled revolt (BLUFOR)</Original>
+      <English>Antistasi - Chilled revolt (BLUFOR)</English>
+      <French />
+      <Russian />
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernaB_mapname_short_text">
+      <Original>Antistasi Chernarus (BLUFOR)</Original>
+      <English>Antistasi Chernarus (BLUFOR)</English>
+    </Key>
+    <Key ID="STR_antistasi_mission_info_chernawinterB_mapname_short_text">
+      <Original>Antistasi Chernarus Winter (BLUFOR)</Original>
+      <English>Antistasi Chernarus Winter (BLUFOR)</English>
+    </Key>
     </Container>
     <Container name="journal_entries">
       <Key ID="STR_antistasi_journal_entry_header_tutorial_1">
@@ -1244,7 +1343,7 @@
       </Key>
       <Key ID="STR_antistasi_journal_entry_text_commander_12">
         <Original>Use the radio and select a spot on the map with good field of vision. A group of snipers will join you. Send them to the selected place and they will spot for you, attempting to remain hidden and not engaging enemies upon contact.</Original>
-        <French>Utilisez la radio et sélectionnez un endroit sur la carte avec un bon champ de vision. Un groupe de tireurs d'élite se joindra à vous. Envoyez-les à l'endroit sélectionné et ils vous repéreront, essayant de rester cachés et n'engageant pas les ennemis au contact.</French> 
+        <French>Utilisez la radio et sélectionnez un endroit sur la carte avec un bon champ de vision. Un groupe de tireurs d'élite se joindra à vous. Envoyez-les à l'endroit sélectionné et ils vous repéreront, essayant de rester cachés et n'engageant pas les ennemis au contact.</French>
         <German>Benutze dein Funkgerät und wähle einen Ort auf der Karte mit einer guten Übersicht. Eine Gruppe Scharfschützen wird sich dir anschließen. Schicke diese zu dem gewählten Ort und sie werden dort einen Beobachtungsposten einrichten. Dabei versuchen sie verdeckt zu bleiben und Feinde bei Kontakt nicht anzugreifen.</German>
         <Czech>Použijte rádio a vyberte místo na mapě s dobrým zorným polem. Připojí se k vám skupina ostřelovačů. Pošlete je na vybrané místo a oni tam zřídí pozorovací stanoviště. Snaží se zůstat v utajení a neútočit na nepřátele v kontaktu.</Czech>
       </Key>
@@ -1807,7 +1906,7 @@
       </Key>
       <Key ID="STR_antistasi_journal_entry_text_gamemode_1">
         <Original>%2 vs %1 war.</Original>
-        <French>Guerre %2 vs %1</French> 
+        <French>Guerre %2 vs %1</French>
         <German>Krieg %2 gegen %1</German>
         <Czech>Válka %2 vs %1.</Czech>
       </Key>
