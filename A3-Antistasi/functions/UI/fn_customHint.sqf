@@ -6,13 +6,13 @@ Description:
     Adds item to notification queue.
     Pre-parse body text to take control of the whole notification (except footer).
     Note: you don't need pre-parse for custom heading/body XML, just insert where plain text would go.
-    Set enableDismissibleHints=false to use original custom hint.
+    Set A3A_customHintEnable=false to use original custom hint.
 
 Scope:
     <LOCAL> Execute on each player to add a global notification.
 
 Environment:
-    <UNSCHEDULED> Simultaneous modification may cause trampling of items in A3A_NotifQueue.
+    <UNSCHEDULED> Simultaneous modification may cause trampling of items in A3A_customHint_MSGs.
 
 Parameters:
     <STRING> Heading of your notification.
@@ -42,14 +42,15 @@ Authors: Michael Phillips(original customHint), Caleb Serafin
 License: MIT License, Copyright (c) 2019 Barbolani & The Official AntiStasi Community
 */
 params [
-    ["_headerText", "", [""]],
-    ["_bodyText", "", ["",parseText""]],
+    ["_headerText", "headermissingno", [""]],
+    ["_bodyText", "bodymissingno", ["",parseText""]],
     ["_isSilent", false, [false]],
     ["_iconData", ["functions\UI\images\logo.paa",4], [ [] ], 2]
 ];
 private _filename = "fn_customHint.sqf";
 
 if (!hasInterface) exitWith {false;}; // Disabled for server & HC.
+if (isNil {A3A_customHint_InitComplete}) then { [] call A3A_fnc_customHintInit; };
 
 private _structuredText = parseText"";
 if (_bodyText isEqualType parseText"") then {
@@ -66,14 +67,17 @@ if (_bodyText isEqualType parseText"") then {
     ] joinString "");
 }; //
 
-if (enableDismissibleHints) then {
-    private _index = A3A_NotifQueue findIf {(_x #0) isEqualTo _headerText}; // Temporary solution until an programming-interface is added for counters and timers.
+if (A3A_customHintEnable) then {
+    private _index = A3A_customHint_MSGs findIf {(_x #0) isEqualTo _headerText}; // Temporary solution until an programming-interface is added for counters and timers.
     if (_index isEqualTo -1) then {
-        A3A_NotifQueue pushBack [_headerText,_structuredText,_isSilent];
+        A3A_customHint_MSGs pushBack [_headerText,_structuredText,_isSilent];
     } else {
-        A3A_NotifQueue set [_index,[_headerText,_structuredText,_isSilent]];
+        A3A_customHint_MSGs set [_index,[_headerText,_structuredText,_isSilent]];
     };
-    [] call A3A_fnc_renderHint; // Allows immediate display of new hint without waiting for loop.
+    private _lastMSGIndex = count A3A_customHint_MSGs - 1;
+    if (A3A_customHint_MSGs #(_lastMSGIndex)#0 isEqualTo _headerText) then {
+        A3A_customHint_LastMSG = serverTime;
+    };
 } else {
     if (_isSilent) then {
         hintSilent _structuredText;
@@ -84,4 +88,3 @@ if (enableDismissibleHints) then {
 true;
 
 // TODO: remove all `hintSilent ""` used in boot processes.
-// TODO: Get colour from Loaded Arma 3 profile (Might be done when actual GUI is designed)
