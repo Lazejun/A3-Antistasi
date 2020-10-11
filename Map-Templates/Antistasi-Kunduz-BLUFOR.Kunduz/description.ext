@@ -6,7 +6,7 @@ OnLoadName = $STR_antistasi_mission_info_kunduzB_mapname_short_text;
 OnLoadMission = $STR_antistasi_mission_info_kunduz_blurb_text;
 loadScreen = "Pictures\Mission\pic.jpg";
 briefingName = $STR_antistasi_mission_info_kunduzB_mapname_text;
-overviewText = $STR_antistasi_mission_info_kunduz_description_text;
+overviewText = $STR_antistasi_mission_info_description_text;
 overviewPicture = "Pictures\Mission\pic.jpg";
 
 #include "MissionDescription\debug.hpp"
