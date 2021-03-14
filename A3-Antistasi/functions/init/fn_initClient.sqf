@@ -51,7 +51,7 @@ else {
 _isJip = _this select 1;
 if (isMultiplayer) then {
 	if (side player == teamPlayer) then {
-		player setVariable ["eligible",true,true];
+		player setVariable ["eligible",false,true];
 	};
 	musicON = false;
 	disableUserInput true;
